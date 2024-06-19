@@ -1,0 +1,56 @@
+---
+import Social from "./Social.astro";
+---
+
+<header>
+  <!-- NAME -->
+  <h1 class="text-2xl text-black font-bold">Leonardo Valdez</h1>
+  <!-- A LITTLE DESCRIPTION -->
+  <p class="mt-1.5 text-gray-600">
+    Desarrollador de software FullStack y programador de aplicaciones web
+    robustas y escalables.
+  </p>
+  <!-- UBICATION -->
+  <div>
+    <a
+      class="flex mt-1.5 items-center text-xs hover:underline gap-1.5 text-gray-600 hover:text-gray-800 ease-in duration-150"
+      href="https://maps.app.goo.gl/KHG8H918P2qXg8Jf8"
+      target="_blank"
+    >
+      <img
+        class="opacity-60 size-3"
+        src="/globe.svg"
+        alt="País de origen de Leonardo Valdez."
+      />
+      Argentina, Tucumán
+    </a>
+  </div>
+  <!-- SOCIAL MEDIA -->
+  <div class="flex mt-4 gap-1.5">
+    <Social
+      href="mailto:vleonardojuanpablo@icloud.com"
+      src="/mail.svg"
+      alt="Correo Electrónico de Leonardo Valdez."
+    />
+    <Social
+      href="tel:+543816134310"
+      src="/phone.svg"
+      alt="Número telefonico de Leonardo Valdez."
+    />
+    <Social
+      href="https://github.com/Orbitadoo"
+      src="/github.svg"
+      alt="GitHub de Leonardo Valdez."
+    />
+    <Social
+      href="https://www.linkedin.com/in/leonardo-juan-pablo-valdez-16825a30b/"
+      src="/linkedin.svg"
+      alt="Linkedin de Leonardo Valdez."
+    />
+    <Social
+      href="https://instagram.com/juanpabloovaldez"
+      src="/instagram.svg"
+      alt="Instagram de Leonardo Valdez."
+    />
+  </div>
+</header>

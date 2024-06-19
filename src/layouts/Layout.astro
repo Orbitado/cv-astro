@@ -1,0 +1,32 @@
+---
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Desarrollador de Software y Programador Web."
+    />
+    <link rel="icon" type="image/svg+xml" href="/merge.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="py-16 flex-col flex-wrap max-w-md sm:max-w-lg md:max-w-2xl mx-auto">
+    <slot />
+  </body>
+</html>
+<style is:global>
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Roboto", sans-serif;
+	}
+	* {
+    font-family: "Inconsolata", monospace;
+    box-sizing: content-box;
+	}
+</style>
