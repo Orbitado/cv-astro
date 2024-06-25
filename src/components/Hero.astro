@@ -26,7 +26,7 @@ import Social from "./Social.astro";
     </a>
   </div>
   <!-- SOCIAL MEDIA -->
-  <div class="flex mt-4 gap-1.5">
+  <div class="flex mt-4 gap-1.5 print:hidden">
     <Social
       href="mailto:vleonardojuanpablo@icloud.com"
       src="/mail.svg"
@@ -52,5 +52,13 @@ import Social from "./Social.astro";
       src="/instagram.svg"
       alt="Instagram de Leonardo Valdez."
     />
+  </div>
+  <div
+    class="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex print:text-[12px] mt-1"
+  >
+    <a href="mailto:vleonardojuanpablo@icloud.com"
+      ><span class="underline">vleonardojuanpablo@icloud.com</span></a
+    ><a href="tel:+543816134310"><span class="underline">+543816134310</span></a
+    >
   </div>
 </header>
